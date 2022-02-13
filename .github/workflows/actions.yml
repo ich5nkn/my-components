@@ -1,11 +1,6 @@
 name: CI Actions
 
-on:
-  pull_request:
-    types:
-      - opened
-    branches:
-      - "master"
+on: push
 jobs:
   test-build:
     runs-on: ubuntu-latest
