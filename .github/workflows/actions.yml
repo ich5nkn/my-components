@@ -1,0 +1,13 @@
+name: CI Actions
+
+on: push
+jobs:
+  test-build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: test-build
+        run: |
+          git clone https://github.com/ich5nkn/my-components.git
+          cd my-components
+          npm ci
+          npm run build
