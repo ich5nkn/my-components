@@ -8,7 +8,7 @@ jobs:
       - name: example
         run: |
           echo "example"
-          git -v
+          git --version
           git clone https://github.com/ich5nkn/my-components.git
           ls -a
           npm -v
