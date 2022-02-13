@@ -5,10 +5,8 @@ jobs:
   test-build:
     runs-on: ubuntu-latest
     steps:
-      - name: install
-        run: |
-          git clone https://github.com/ich5nkn/my-components.git
-          cd my-components
-          npm ci
-      - name: build
-        run: npm run build
+      run: |
+        git clone https://github.com/ich5nkn/my-components.git
+        cd my-components
+        npm ci
+        npm run build
