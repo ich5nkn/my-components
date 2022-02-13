@@ -10,6 +10,7 @@ jobs:
           echo "example"
           git --version
           git clone https://github.com/ich5nkn/my-components.git
+          cd my-components
           ls -a
           npm -v
       # - name: install
