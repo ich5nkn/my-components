@@ -1,0 +1,16 @@
+name: CI Actions
+
+on:
+  pull_request:
+    types:
+      - opened
+    branches:
+      - "master"
+jobs:
+  test-build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: install
+      - run: npm ci
+      - name: build
+      - run: npm run build
